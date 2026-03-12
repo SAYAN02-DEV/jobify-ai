@@ -45,9 +45,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_right,#0000000f_1px,transparent_1px),linear-gradient(to_bottom,#0000000f_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:linear-gradient(to_bottom,transparent_40%,black_100%)]" />
         
         <nav className="relative z-10 flex items-center justify-between p-4 md:px-16 lg:px-24 xl:px-32 md:py-6 w-full">
-          <a href="/" aria-label="Home" className="flex items-center">
+          <a href="/" aria-label="Jobify AI Home" className="flex items-center">
             <Hexagon className="h-8 w-8 text-slate-900" />
-            <span className="text-xl font-bold ml-2 text-slate-900">Brand</span>
+            <span className="text-xl font-bold ml-2 text-slate-900 tracking-tight">Jobify AI</span>
           </a>
 
           <div
@@ -61,20 +61,20 @@ export default function HeroSection() {
             ].join(' ')}
             aria-hidden={!menuOpen}
           >
-            <a href="#" className="hover:text-gray-600 text-slate-900">Home</a>
+            <a href="#" className="hover:text-gray-600 text-slate-900">For Candidates</a>
 
             <div className="relative group flex items-center gap-1 cursor-pointer text-slate-900">
-              <span>Products</span>
+              <span>Solutions</span>
               <ChevronDown className="h-4 w-4 text-slate-700" />
               <div className="absolute bg-white font-normal flex flex-col gap-2 w-max rounded-lg p-4 top-12 left-0 opacity-0 -translate-y-4 group-hover:top-8 group-hover:opacity-100 transition-all duration-300 shadow-lg border border-slate-100">
-                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Templates</a>
-                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">UI Components</a>
-                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Mobile Apps</a>
-                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Web Apps</a>
+                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Resume AI Screener</a>
+                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Enterprise Recruiting</a>
+                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Talent Sourcing</a>
+                <a href="#" className="hover:translate-x-1 hover:text-slate-500 transition-all">Interview Prep</a>
               </div>
             </div>
 
-            <a href="#" className="hover:text-gray-600 text-slate-900">Stories</a>
+            <a href="#" className="hover:text-gray-600 text-slate-900">Success Stories</a>
             <a href="#" className="hover:text-gray-600 text-slate-900">Pricing</a>
 
             <button
@@ -87,7 +87,7 @@ export default function HeroSection() {
           </div>
 
           <button className="hidden md:block bg-[#1c212f] hover:bg-black text-white px-6 py-3 rounded-full font-medium transition shadow-md">
-            Contact Us
+            Sign In
           </button>
 
           <button
@@ -101,7 +101,7 @@ export default function HeroSection() {
         </nav>
 
         <div className="relative z-10 flex items-center gap-2 border border-slate-300 bg-white/50 backdrop-blur-md hover:border-slate-400/70 rounded-full w-max mx-auto px-4 py-2 mt-40 md:mt-32 text-slate-800">
-          <span>New announcement on your inbox</span>
+          <span>AI-Powered Resume Scanner is now live</span>
           <button className="flex items-center gap-1 font-medium hover:text-black">
             <span>Read more</span>
             <ArrowRight className="h-4 w-4" />
@@ -109,11 +109,11 @@ export default function HeroSection() {
         </div>
 
         <h5 className="relative z-10 text-4xl md:text-7xl font-semibold max-w-[850px] text-center mx-auto mt-8 text-slate-900 tracking-tight">
-          Build apps faster with ui components
+          Find your next role faster with AI
         </h5>
 
         <p className="relative z-10 text-sm md:text-base mx-auto max-w-2xl text-center mt-6 max-md:px-4 text-slate-700">
-          Build sleek, consistent UIs without wrestling with design systems, our components handle the heavy lifting so you can ship faster.
+          Stop wrestling with endless job applications. Our AI engine handles the heavy lifting, matching your unique skills directly to open roles so you can get hired faster.
         </p>
 
         <div className="relative z-10 mx-auto w-full flex items-center justify-center gap-3 mt-8">
