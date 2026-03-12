@@ -29,21 +29,13 @@ export function DemoCircles() {
     }, []);
 
     return (
-        <div className="relative">
+        <div className="relative w-full">
             <BackgroundCircles variant={currentVariant} />
             <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
                 <HeroText />
             </div>
             <div className="absolute top-12 right-12 z-30">
-                <button
-                    type="button"
-                    className="bg-slate-950 dark:bg-white text-white dark:text-slate-950 px-4 py-1 rounded-md z-10 text-sm font-medium pointer-events-auto"
-                    onClick={() => {
-                        setCurrentVariant(getNextVariant());
-                    }}
-                >
-                    Change Variant
-                </button>
+                
             </div>
         </div>
     );

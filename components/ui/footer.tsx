@@ -42,8 +42,8 @@ export function Footer() {
     return (
         <footer
             className={cn(
-                "w-full border-t",
-                "bg-background/95 supports-[backdrop-filter]:bg-background/80 backdrop-blur-lg",
+                "w-full border-t border-white/10 bg-gray-900 text-white",
+                "supports-[backdrop-filter]:bg-gray-900/95 backdrop-blur-lg",
             )}
         >
             <div className="mx-auto w-full max-w-3xl px-4 py-12">
@@ -55,7 +55,7 @@ export function Footer() {
                             <Grid2x2PlusIcon className="size-5" />
                             <span className="font-mono text-base font-bold">Jobify AI</span>
                         </div>
-                        <p className="max-w-xs text-sm text-muted-foreground leading-relaxed">
+                        <p className="max-w-xs text-sm leading-relaxed text-white/70">
                             AI-powered job matching that connects talent with opportunity. Smarter applications, faster results.
                         </p>
                         {/* Socials */}
@@ -65,7 +65,7 @@ export function Footer() {
                                     key={label}
                                     href={href}
                                     aria-label={label}
-                                    className="text-muted-foreground hover:text-foreground transition-colors"
+                                    className="text-white/60 transition-colors hover:text-white"
                                 >
                                     <Icon className="size-4" />
                                 </a>
@@ -77,7 +77,7 @@ export function Footer() {
                     <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
                         {footerLinks.map((col) => (
                             <div key={col.heading} className="flex flex-col gap-3">
-                                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                                <p className="text-xs font-semibold uppercase tracking-widest text-white/55">
                                     {col.heading}
                                 </p>
                                 <ul className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ export function Footer() {
                                         <li key={link.label}>
                                             <a
                                                 href={link.href}
-                                                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                                className="text-sm text-white/70 transition-colors hover:text-white"
                                             >
                                                 {link.label}
                                             </a>
@@ -98,7 +98,7 @@ export function Footer() {
                 </div>
 
                 {/* Bottom bar */}
-                <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t pt-6 text-xs text-muted-foreground sm:flex-row">
+                <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row">
                     <p>© {new Date().getFullYear()} Jobify AI. All rights reserved.</p>
                     <p>Built with Next.js &amp; Tailwind CSS</p>
                 </div>
