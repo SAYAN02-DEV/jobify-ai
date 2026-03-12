@@ -1,11 +1,10 @@
 import React from 'react'
 import { FloatingHeader } from './floating-header'
-const navbar = () => {
+
+const Navbar = () => {
   return (
-    <div>
-        <FloatingHeader/>
-    </div>
+    <FloatingHeader />
   )
 }
 
-export default navbar
+export default Navbar
